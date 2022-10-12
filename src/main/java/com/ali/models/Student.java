@@ -1,6 +1,9 @@
 package com.ali.models;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -11,8 +14,10 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Temporal(TemporalType.DATE)
     private Date birthDate;
     private String address;
+    @Enumerated(EnumType.ORDINAL)
     private Gender gender;
     @OneToMany
     private List<Course> courseList = new ArrayList<>();

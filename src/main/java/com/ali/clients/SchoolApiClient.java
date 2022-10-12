@@ -4,15 +4,17 @@ import com.ali.models.*;
 import com.ali.utils.EntityManagerUtils;
 
 import javax.persistence.EntityManager;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class SchoolApiClient {
     public static void main(String[] args) {
 
 
-        Student student = new Student("Aliheydar", new Date(), "Sahil", Gender.MALE);
-        Student student2 = new Student("Cavid", new Date(), "Lerik", Gender.MALE);
-        Student student3 = new Student("Aygun", new Date(), "Mkr", Gender.FEMALE);
+        Student student = new Student("Aliheydar",new Date(), "Sahil", Gender.MALE);
+        Student student2 = new Student("Cavid",new Date(), "Lerik", Gender.MALE);
+        Student student3 = new Student("Aygun",new Date(), "Mkr", Gender.FEMALE);
         Student student4 = new Student("Sevinc", new Date(), "Zire", Gender.FEMALE);
 
         Instructor instructor = new Permanent("Hoca", "Sahara", "08923382",109.8);
