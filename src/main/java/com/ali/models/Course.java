@@ -12,7 +12,8 @@ public class Course {
     private Double creditScore;
     @ManyToOne
     private Instructor instructor;
-
+    @ManyToOne
+    private StudentCourse studentCourse;
     public Long getId() {
         return id;
     }
@@ -53,7 +54,15 @@ public class Course {
         this.instructor = instructor;
     }
 
-    public Course( String courseName, int courseCode, Double creditScore) {
+    public StudentCourse getStudentCourse() {
+        return studentCourse;
+    }
+
+    public void setStudentCourse(StudentCourse studentCourse) {
+        this.studentCourse = studentCourse;
+    }
+
+    public Course(String courseName, int courseCode, Double creditScore) {
 
         this.courseName = courseName;
         this.courseCode = courseCode;

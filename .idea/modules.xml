@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SchoolManagmentHibernate.iml" filepath="$PROJECT_DIR$/SchoolManagmentHibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SchoolManagmentSpringBoot/SchoolManagmentSpringBoot.iml" filepath="$PROJECT_DIR$/SchoolManagmentSpringBoot/SchoolManagmentSpringBoot.iml" />
     </modules>
   </component>
 </project>

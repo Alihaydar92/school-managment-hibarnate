@@ -19,8 +19,8 @@ public class Student {
     private String address;
     @Enumerated(EnumType.ORDINAL)
     private Gender gender;
-    @OneToMany
-    private List<Course> courseList = new ArrayList<>();
+    @ManyToOne
+    private StudentCourse studentCourse;
 
     public Student() {
 
@@ -58,12 +58,12 @@ public class Student {
         this.gender = gender;
     }
 
-    public List<Course> getCourseList() {
-        return courseList;
+    public StudentCourse getStudentCourse() {
+        return studentCourse;
     }
 
-    public void setCourseList(List<Course> courseList) {
-        this.courseList = courseList;
+    public void setStudentCourse(StudentCourse studentCourse) {
+        this.studentCourse = studentCourse;
     }
 
     public Student(String name, Date birthDate, String address, Gender gender) {
